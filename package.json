@@ -1,0 +1,37 @@
+{
+  "name": "x402-proxy",
+  "version": "0.1.0",
+  "description": "x402 proxy that adds an ERC-7710 delegation payment option to any x402 resource",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/src/index.js",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test:seller": "tsx test/seller.ts",
+    "test:buyer": "tsx test/buyer.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@metamask/x402": "^0.2.0",
+    "@x402/core": "^2.14.0",
+    "@x402/evm": "^2.14.0",
+    "@x402/express": "^2.14.0",
+    "@x402/fetch": "^2.14.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "viem": "^2.52.2"
+  },
+  "devDependencies": {
+    "@metamask/smart-accounts-kit": "^1.6.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
