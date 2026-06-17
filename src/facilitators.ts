@@ -3,7 +3,7 @@ import { HTTPFacilitatorClient } from "@x402/core/server";
 const FACILITATOR_PATH = "/platform/v2/x402";
 
 function facilitatorUrl(sentinelName: string): string {
-  return `https://tx-sentinel-${sentinelName}.api.cx.metamask.io${FACILITATOR_PATH}`;
+  return `https://tx-sentinel-${sentinelName}.dev-api.cx.metamask.io${FACILITATOR_PATH}`;
 }
 
 /**
